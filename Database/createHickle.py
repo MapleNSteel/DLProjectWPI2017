@@ -12,7 +12,7 @@ def getImageFiles(directory):
 		if file.endswith(".jpg"):
 			print(num)
 			num=num+1
-			frame=cv2.resize(cv2.imread(os.path.join(directory, file)), (180,320), interpolation = cv2.INTER_CUBIC)
+			frame=cv2.imread(os.path.join(directory, file))
 			imageList.append(frame)
 
 	frames=np.array(imageList)
@@ -21,7 +21,7 @@ def getImageFiles(directory):
 
 def main():
 
-	addresses=['shubham','Arjun','kygandomi_frames','prakash']
+	addresses=['shubham','Arjun','kygandomi_frames','prakash', 'kiyer_frames']
 	for address in addresses:
 		print(address)
 		getImageFiles(address)

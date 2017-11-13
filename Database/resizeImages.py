@@ -12,7 +12,7 @@ def getImageFiles(directory):
 
 def resizeImage(address):
 	frame=cv2.imread(address)
-	frame= cv2.resize(frame, (180,320), interpolation = cv2.INTER_CUBIC)
+	frame= cv2.resize(frame, (90,160), interpolation = cv2.INTER_CUBIC)
 	cv2.imwrite(address,frame)
 def main():
 
