@@ -1,0 +1,5 @@
+Populate this directory with folders containing videos to train on.
+extractVideo.py produces images from the videos.
+resizeImages.py resizes images extracted to a standard resolution.
+createHickle.py makes hickle files in each folder containing images
+mergeHickle.py merges hickle files in the Database directory - hardcoded.
